@@ -22,4 +22,12 @@ spring:
           uri: lb://accounts-service
           predicates:
             - Path=/accounts/**
+        - id: movement-inquiry-service
+          uri: lb://movement-inquiry-service
+          predicates:
+            - Path=/movements/**
+        - id: withdraw-deposit-service
+          uri: lb://withdraw-deposit-service
+          predicates:
+            - Path=/withdraw/**
 
