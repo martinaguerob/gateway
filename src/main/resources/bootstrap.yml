@@ -34,3 +34,7 @@ spring:
           uri: lb://balance-inquiry-service
           predicates:
             - Path=/balance-inquiry/**
+        - id: transfers-service
+          uri: lb://transfers-service
+          predicates:
+            - Path=/transfers/**

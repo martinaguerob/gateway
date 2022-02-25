@@ -29,5 +29,12 @@ spring:
         - id: withdraw-deposit-service
           uri: lb://withdraw-deposit-service
           predicates:
-            - Path=/withdraw/**
-
+            - Path=/transaction/**
+        - id: balance-inquiry-service
+          uri: lb://balance-inquiry-service
+          predicates:
+            - Path=/balance-inquiry/**
+        - id: transfers-service
+          uri: lb://transfers-service
+          predicates:
+            - Path=/transfers/**
