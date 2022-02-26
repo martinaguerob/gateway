@@ -38,3 +38,15 @@ spring:
           uri: lb://transfers-service
           predicates:
             - Path=/transfers/**
+        - id: yanki-account-service
+          uri: lb://yanki-account-service
+          predicates:
+            - Path=/yanki-account/**
+        - id: yanki-transfers-service
+          uri: lb://yanki-transfers-service
+          predicates:
+            - Path=/yanki-transfers/**
+        - id: yanki-purse-service
+          uri: lb://yanki-purse-service
+          predicates:
+            - Path=/yanki-purse/**
