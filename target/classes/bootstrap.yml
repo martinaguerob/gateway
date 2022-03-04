@@ -38,3 +38,31 @@ spring:
           uri: lb://transfers-service
           predicates:
             - Path=/transfers/**
+        - id: yanki-account-service
+          uri: lb://yanki-account-service
+          predicates:
+            - Path=/yanki-account/**
+        - id: yanki-transfers-service
+          uri: lb://yanki-transfers-service
+          predicates:
+            - Path=/yanki-transfers/**
+        - id: yanki-purse-service
+          uri: lb://yanki-purse-service
+          predicates:
+            - Path=/yanki-purse/**
+        - id: bootcoin-service
+          uri: lb://bootcoin-service
+          predicates:
+            - Path=/bootcoin/**
+        - id: bootcoin-account-service
+          uri: lb://bootcoin-account-service
+          predicates:
+            - Path=/bootcoin-account/**
+        - id: bootcoin-purse-service
+          uri: lb://bootcoin-purse-service
+          predicates:
+            - Path=/bootcoin-purse/**
+        - id: bootcoin-transaction-service
+          uri: lb://bootcoin-transaction-service
+          predicates:
+            - Path=/bootcoin-transaction/**
